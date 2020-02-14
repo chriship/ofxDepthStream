@@ -14,15 +14,21 @@
 // limitations under the License.
 //
 // Be excellent to each other.
-#ifndef ASTRA_VERSION_HPP
-#define ASTRA_VERSION_HPP
+#ifndef ASTRA_VERSION_H
+#define ASTRA_VERSION_H
 
 #include <astra_core/capi/astra_defines.h>
 #include <astra_core/capi/astra_types.h>
 
 ASTRA_BEGIN_DECLS
 
+/**
+ * \ingroup c_ref
+ * get current sdk version.
+ * @param info structure of astra_version_info_t, shouldn't be null.
+ */
 ASTRA_API_EX astra_status_t astra_version(astra_version_info_t* info);
 
 ASTRA_END_DECLS
-#endif /* ASTRA_VERSION_HPP */
+
+#endif /* ASTRA_VERSION_H */
