@@ -44,7 +44,7 @@ void ofxDepthStream::loadDepthTexture8bit(ofTexture& tex, const void* data, size
   // }
 
   // 3-channel data buffer
-  float raw[(int)tex.getWidth() * (int)tex.getHeight() * 3];
+  float* raw = new float[(int)tex.getWidth() * (int)tex.getHeight() * 3];
 
   for (int y = 0.0; y < tex.getHeight(); y++) {
     for (int x = 0.0; x < tex.getWidth(); x++) {
@@ -118,7 +118,7 @@ void ofxDepthStream::loadDepthTexture16bit(ofTexture& tex, const void* data, siz
   // }
 
   // 3-channel data buffer
-  float raw[(int)tex.getWidth() * (int)tex.getHeight() * 3];
+  float* raw = new float[(int)tex.getWidth() * (int)tex.getHeight() * 3];
 
   for (int y = 0.0; y < tex.getHeight(); y++) {
     for (int x = 0.0; x < tex.getWidth(); x++) {
@@ -190,7 +190,7 @@ void ofxDepthStream::loadDepthTexture32bit(ofTexture& tex, const void* data, siz
   // }
 
   // 3-channel data buffer
-  float raw[(int)tex.getWidth() * (int)tex.getHeight() * 3];
+  float* raw = new float[(int)tex.getWidth() * (int)tex.getHeight() * 3];
 
   for (int y = 0.0; y < tex.getHeight(); y++) {
     for (int x = 0.0; x < tex.getWidth(); x++) {
