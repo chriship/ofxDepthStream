@@ -23,4 +23,4 @@
 #include "Inflater.h"
 #include "Recorder.h"
 #include "Playback.h"
-#include "functional.h"
+#include "depthfunctions.h"
